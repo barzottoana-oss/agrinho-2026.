@@ -1,0 +1,43 @@
+/* Reset básico para evitar margens fantasmas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Substitua pelo link da sua imagem ou caminho local */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar em telas longas */
+    
+    /* Garante que o fundo ocupe toda a tela e centraliza o conteúdo */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Caixa centralizada com o conteúdo */
+.content-container {
+    width: 100%;
+    max-width: 600px; /* Impede que a caixa fique larga demais em monitores grandes */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.92); /* Fundo branco semi-transparente */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-top: 5px solid #2e7d32; /* Detalhe em verde "agrícola" */
+}
+
+/* Tipografia Responsiva */
+.card h1 {
+    color
